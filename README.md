@@ -105,21 +105,31 @@ This report includes:
 
   This is an example when bootstrap directorty is in DRUPALROOT/sites/all/tests/behat/bootstrap.
 
-```
+```json
 default:
   autoload:
-    '': "%paths.base%/../all/tests/behat/bootstrap"
+    '': %paths.base%\tests\features\bootstrap # This works with windows for linux change the path
   suites:
     default:
       paths:
-        - "%paths.base%/../all/tests/behat/features"
+        - %paths.base%\tests\features # This works with windows for linux change the path
       contexts:
-        - Metadrop\Behat\Context\DebugContext:
+        - Drupal\DrupalExtension\Context\DrupalContext
+        - Drupal\DrupalExtension\Context\DrushContext
+        - Drupal\DrupalExtension\Context\MessageContext
+        - Drupal\DrupalExtension\Context\MinkContext
+        - Drupal\DrupalExtension\Context\MarkupContext
+        - lexsoft\DrupalBehatContexts\UIContext
+        - lexsoft\DrupalBehatContexts\DrupalOrganicGroupsExtendedContext
+        - lexsoft\DrupalBehatContexts\DrupalExtendedContext
+        - lexsoft\DrupalBehatContexts\BrowserSizeContext:
+            parameters:
+        - lexsoft\DrupalBehatContexts\DebugContext:
             parameters:
               'report_on_error': true
-              'error_reporting_path': '/var/error_reports/tests/reports'
-              'screenshots_path': '/var/error_reports/tests/screenshots'
-              'page_contents_path': '/var/error_reports/tests/pages'
+              'error_reporting_path': "%paths.base%\\tests\\errors\\reports\\" # This works with windows for linux change the path
+              'screenshots_path': "%paths.base%\\tests\\errors\\screenshots\\" # This works with windows for linux change the path
+              'page_contents_path': "%paths.base%\\tests\\errors\\pages\\" # This works with windows for linux change the path
 ```
 
 **Parameters**
@@ -150,8 +160,8 @@ Add BrowserSizeContext to your suite.
 
 To declare sizes and make them available use the context params:
 
-```
-- Metadrop\Behat\Context\BrowserSizeContext:
+```json
+- lexsoft\DrupalBehatContexts\BrowserSizeContext:
     parameters:
       sizes:
         Default:

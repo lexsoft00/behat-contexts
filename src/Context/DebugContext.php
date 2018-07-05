@@ -7,7 +7,7 @@
  *
  */
 
-namespace lexsoft\DrupalBehatContexts;
+namespace lexsoft\DrupalBehatContexts\Context;
 
 
 use Behat\Behat\Context\SnippetAcceptingContext;

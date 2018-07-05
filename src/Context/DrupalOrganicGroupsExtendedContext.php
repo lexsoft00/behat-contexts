@@ -5,7 +5,7 @@
  * Context for Behat which contains utilities for Organic groups.
  */
 
-namespace lexsoft\DrupalBehatContexts;
+namespace lexsoft\DrupalBehatContexts\Context;
 
 use Behat\Behat\Context\SnippetAcceptingContext;
 use Drupal\DrupalExtension\Context\RawDrupalContext;
