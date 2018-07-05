@@ -1,5 +1,5 @@
 {
-    "name": "lexsoft/behat-contexts",
+    "name": "lexsoft/drupal-behat-contexts",
     "description": "Simple context to help debugging tests with some steps.",
     "authors": [
         {
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "lexsoft\\BehatContexts\\": "src/"
+            "lexsoft\\DrupalBehatContexts\\": "src/"
         }
     }
 }

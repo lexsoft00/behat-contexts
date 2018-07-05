@@ -9,7 +9,7 @@
  *
  */
 
-namespace lexsoft\BehatContexts;
+namespace lexsoft\DrupalBehatContexts;
 
 use Behat\Behat\Context\SnippetAcceptingContext;
 use Behat\Mink\Exception\ElementNotFoundException;

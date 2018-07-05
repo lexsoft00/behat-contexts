@@ -7,7 +7,7 @@
  *
  */
 
-namespace lexsoft\BehatContexts;
+namespace lexsoft\DrupalBehatContexts;
 
 use Behat\Behat\Context\SnippetAcceptingContext;
 use Behat\Gherkin\Node\TableNode;
