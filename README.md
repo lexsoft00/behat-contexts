@@ -119,12 +119,12 @@ default:
         - Drupal\DrupalExtension\Context\MessageContext
         - Drupal\DrupalExtension\Context\MinkContext
         - Drupal\DrupalExtension\Context\MarkupContext
-        - lexsoft\DrupalBehatContexts\UIContext
-        - lexsoft\DrupalBehatContexts\DrupalOrganicGroupsExtendedContext
-        - lexsoft\DrupalBehatContexts\DrupalExtendedContext
-        - lexsoft\DrupalBehatContexts\BrowserSizeContext:
+        - lexsoft\DrupalBehatContexts\Context\UIContext
+        - lexsoft\DrupalBehatContexts\Context\DrupalOrganicGroupsExtendedContext
+        - lexsoft\DrupalBehatContexts\Context\DrupalExtendedContext
+        - lexsoft\DrupalBehatContexts\Context\BrowserSizeContext:
             parameters:
-        - lexsoft\DrupalBehatContexts\DebugContext:
+        - lexsoft\DrupalBehatContexts\Context\DebugContext:
             parameters:
               'report_on_error': true
               'error_reporting_path': "%paths.base%\\tests\\errors\\reports\\" # This works with windows for linux change the path
