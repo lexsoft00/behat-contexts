@@ -35,6 +35,7 @@ Add DrupalBehatContexts to the list of dependencies inside your `composer.json`.
 {
     "require": {
         "behat/behat": "3.*@stable",
+        "drupal/drupal-extension": "3.*@stable",
         "lexsoft/drupal-behat-contexts": "1.*",
     },
     "minimum-stability": "dev",
