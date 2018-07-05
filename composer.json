@@ -3,7 +3,7 @@
     "description": "Simple context to help debugging tests with some steps.",
     "authors": [
         {
-            "name": "Alexandru",
+            "name": "Alexandru"
         }
     ],
     "minimum-stability": "dev",
