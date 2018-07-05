@@ -1,15 +1,56 @@
-# Behat Contexts
-
+# Drupal Behat Contexts
 
 Contexts that we use with Behat 3.x tests on Drupal sites.
 
-## Install
+## How?
 
-This contexts use the Drupal Extension [Drupal Extension](https://www.drupal.org/project/drupalextension), so it should be installed in your system.
+* The tool can be installed easily with composer.
+* Defining the formatter in the `behat.yml` file
+* Modifying the settings in the `behat.yml`file
 
-Put this repository in the bootstrap directory of your project. A Drupal 7 project using Drupal Extension this directory may be located in sites/all/tests/behat/bootstrap. So, directory Metadrop of this repository should be in that bootstrap directory. Contexts will be autoladed.
+## Installation
 
-@TODO: Improve installation method, use some standard way.
+### Prerequisites
+
+This extension requires:
+
+* PHP 5.3.x or higher
+* Behat 3.x or higher
+
+### Through composer
+
+The easiest way to keep your suite updated is to use [Composer](http://getcomposer.org>):
+
+#### Install with composer:
+
+```bash
+$ composer require --dev lexsoft/drupal-behat-contexts
+```
+
+#### Install using `composer.json`
+
+Add DrupalBehatContexts to the list of dependencies inside your `composer.json`.
+
+```json
+{
+    "require": {
+        "behat/behat": "3.*@stable",
+        "lexsoft/drupal-behat-contexts": "1.*",
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "bin-dir": "bin/"
+    }
+}
+```
+
+Then simply install it with composer:
+
+```bash
+$ composer install --dev --prefer-dist
+```
+
+You can read more about Composer on its [official webpage](http://getcomposer.org).
 
 ## Configure
 
