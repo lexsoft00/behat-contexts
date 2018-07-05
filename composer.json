@@ -1,6 +1,11 @@
 {
     "name": "lexsoft/drupal-behat-contexts",
     "description": "Simple context to help debugging tests with some steps.",
+    "keywords": ["drupal", "testing", "behat", "lexsoft"],
+    "type": "testing-tools",
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "authors": [
         {
             "name": "Alexandru"
